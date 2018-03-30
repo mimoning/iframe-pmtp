@@ -40,6 +40,11 @@ function request (key, data = {}, callback, target = TARGET, origin = '*') {
   }
 }
 
+// 单纯请求数据，不发送数据
+function get (key, callback, target = TARGET, origin = '*') {
+  request(key, {}, callback, target, origin)
+}
+
 // 添加收到请求的回调函数
 function addListener (key, callback, once = false) {
   if (typeof callback !== 'function') {
@@ -92,6 +97,7 @@ activate()
 
 export default {
   request,
+  get,
   addListener,
   setTarget
 }
