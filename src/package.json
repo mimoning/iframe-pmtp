@@ -1,0 +1,26 @@
+{
+  "name": "iframe-pmtp",
+  "version": "1.0.1",
+  "description": "An iframe transfer protocol base on postmessage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimoning/PostMessage.git"
+  },
+  "keywords": [
+    "iframe",
+    "postmessage"
+  ],
+  "author": "MimoN <mimo.ouyang@daocloud.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mimoning/PostMessage/issues"
+  },
+  "homepage": "https://github.com/mimoning/PostMessage#readme",
+  "dependencies": {
+    "uuid": "^3.2.1"
+  }
+}
