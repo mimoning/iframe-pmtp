@@ -2,6 +2,10 @@
 
 > A library to make the communication between iframe and parent window easier~
 
+# Install The package
+
+`npm install iframe-pmtp`
+
 ## Build Setup
 
 ``` bash
