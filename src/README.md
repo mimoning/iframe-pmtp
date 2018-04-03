@@ -16,8 +16,8 @@ npm install iframe-pmtp --save
 |-----|-------------|-----------|
 | `setTarget` | **window object** | set the default window that your request target to |
 | `addListener` | `key` **string**, your listener token <br> `callback` **function**, your handler | add the listener to the message event |
-| `request` | `key` **string**, your request token, determines the handler when the target recieved <br> `data` **object**, the data you want to send to the target among the request <br> `callback` **function**, the handler when the target response <br> `target` **window target (optional)**, the target your request want to send  <br> `origin` **string (optional, default: '*')**, the origin your request target should be | send the request to the target |
-| `get` | `key` **string** <br> `callback` **function** <br> `target` **window object (optional)** <br> `origin` **string (optional, default: '*')** | a request without the data arguments |
+| `request` | `key` **string**, your request token, determines the handler when the target recieved <br> `data` **object**, the data you want to send to the target among the request <br> `callback` **function (optional)**, the handler when the target response <br> `target` **window target (optional)**, the target your request want to send  <br> `origin` **string (optional, default: '*')**, the origin your request target should be | send the request to the target |
+| `get` | `key` **string** <br> `callback` **function (optional)** <br> `target` **window object (optional)** <br> `origin` **string (optional, default: '*')** | a request without the data arguments |
 
 
 #### Examples

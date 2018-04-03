@@ -29,14 +29,20 @@ function postmessage ({ uuid, target, type, origin, key, data }) {
 
 // 发送请求
 function request (key, data = {}, callback, target = TARGET, origin = '*') {
+  // 如果没有设置 target 的话，抛出错误
+  if (!target) {
+    throw new Error('You must set a target by "setTarget" method Or the fourth parameter')
+  }
   // 生成唯一标识符 uuid
   const uuid = UUID()
   // 发送 postmessage
   postmessage({ uuid, target, type: 'request', key, data, origin })
   // 注册相应回调函数
-  handlers[uuid] = (data) => {
-    callback(data)
-    delete handlers[uuid]
+  if (callback && typeof callback === 'function') {
+    handlers[uuid] = (data) => {
+      callback(data)
+      delete handlers[uuid]
+    }
   }
 }
 
