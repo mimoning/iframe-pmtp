@@ -27,7 +27,7 @@ const baseConfig = {
     child: './example/child/main.js'
   },
   output: {
-    path: config.build.assetsRoot,
+    path: config.dev.assetsRoot,
     filename: '[name].js',
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath

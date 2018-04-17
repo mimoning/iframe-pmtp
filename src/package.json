@@ -1,8 +1,8 @@
 {
   "name": "iframe-pmtp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An iframe transfer protocol base on postmessage",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
