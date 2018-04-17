@@ -118,7 +118,7 @@ exports.setEntrys = function (conf) {
     // 根据entry添加新插件到plugins中
     plugins.push(new HtmlWebpackPlugin(Object.assign({
       // HTML输出地址
-      filename: config.build[ent],
+      filename: config.tpls[ent],
       // 允许引用的chunk，包含本身及公共部分
       chunks: [ent],
       // 模板路径

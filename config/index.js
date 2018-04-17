@@ -5,6 +5,10 @@
 const path = require('path')
 
 module.exports = {
+  tpls: {
+    parent: path.resolve(__dirname, '../dist/index.html'),
+    child: path.resolve(__dirname, '../dist/child.html'),
+  },
   dev: {
 
     // Paths
@@ -44,9 +48,6 @@ module.exports = {
   },
 
   build: {
-    // Template for index.html
-    parent: path.resolve(__dirname, '../dist/index.html'),
-    child: path.resolve(__dirname, '../dist/child.html'),
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
