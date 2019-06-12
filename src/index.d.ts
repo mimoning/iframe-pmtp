@@ -7,14 +7,14 @@ declare module PM {
     callback?: (res: any) => void,
     target?: object,
     origin?: string
-  );
+  ): void;
 
   function get(
     key: string,
     callback?: (res: any) => void,
     target?: object,
     origin?: string
-  );
+  ): void;
 
   function addListener(
     key: string,
@@ -22,7 +22,7 @@ declare module PM {
       data: object,
       res: (data: any) => void
     ) => void
-  );
+  ): void;
 }
 
 export default PM;
